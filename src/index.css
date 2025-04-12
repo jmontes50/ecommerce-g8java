@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+/* esto es necesario ya que leaflet trae un contenedor propio con esta clase, tenemos que indicarle un tamaño para que se vea */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
